@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>Restaurants!</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+</head>
+<body>
+
+<p>Please add in your favorite restaurant:</p>
+ <form action="#" th:action="@{/}" th:object="${restaurant}" method="post">
+    <table>
+	<tr>
+            <td>Restaurant Name:</td>
+	    <td><input type="text" th:field="*{name}" /></td>
+	</tr>
+	<tr>
+	    <td>Owner:</td>
+	    <td><input type="text" th:field="*{owner}" /></td>
+	</tr>
+	<tr>
+    	    <td>Phone Number:</td>
+	    <td><input type="tel" th:field="*{phoneNumber}" /></td>
+	</tr>
+	<tr>
+    	    <td>Address:</td>
+	    <td><input type="text" th:field="*{address}" /></td>
+	</tr>
+	<tr>
+	    <td><button type="submit">Submit Your Restaurant</button></td>
+	</tr>
+    </table>
+</form>
+
+
+</body>
+
+
+</html>

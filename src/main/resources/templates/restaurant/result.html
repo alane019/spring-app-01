@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Restaurant Confirmation</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h3>Restaurant Confirmation</h3>
+	<p>Thank you for adding your restaurant!</p>
+	<h4>Restaurant:</h4>
+	Name: <span th:text="${name}" />
+	<br/><br/>
+	Owner: <span th:text="${owner}" />
+	<br/><br/>
+	Address: <span th:text="${address}" />
+	<br/><br/>
+	Phone Number: <span th:text="${phoneNumber}" />
+</body>
+</html>
