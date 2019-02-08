@@ -17,7 +17,8 @@ public class RestaurantController {
     public String index(Restaurant restaurant) {
 	return "restaurant/index";
     }
-    
+	
+	// adding a comment
     @PostMapping(value = "/")
     public String addNewRestaurant(Restaurant restaurant, Model model) {
     	restaurantRepository.save(restaurant);
